@@ -1,11 +1,9 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven {
-            name = 'MinecraftForge'
-            url = 'https://maven.minecraftforge.net/'
-        }
-        maven { url = 'https://maven.parchmentmc.org' }
+        // Only keep Fabric-related repositories
+        maven { url = 'https://maven.fabricmc.net/' }
+        maven { url = 'https://maven.parchmentmc.org' } // optional if using Parchment
     }
 }
 
